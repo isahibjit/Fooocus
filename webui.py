@@ -350,6 +350,7 @@ with shared.gradio_root:
                                     value = modules.util.get_image_size_info(image, modules.flags.sdxl_aspect_ratios)
                                     return gr.update(value=value, visible=True)
 
+
                                 describe_input_image.upload(trigger_show_image_properties, inputs=describe_input_image,
                                                             outputs=describe_image_size, show_progress=False, queue=False)
 
